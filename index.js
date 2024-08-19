@@ -4,7 +4,6 @@ import realtimeRoute from './routes/realtimeRoute.js';
 import dailyRoute from './routes/dailyRoute.js';
 import dotenv from 'dotenv';
 
-g
 dotenv.config();
 
 const app = express();
