@@ -4,21 +4,11 @@ import realtimeRoute from './routes/realtimeRoute.js';
 import dailyRoute from './routes/dailyRoute.js';
 import dotenv from 'dotenv';
 
-import cors from 'cors';
-
+g
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5050;
-
-app.use(cors({
-
-    origin: "http://localhost:8080",
-
-    credentials: true 
-
-  })); 
-
 
 app.use(express.json());
 
