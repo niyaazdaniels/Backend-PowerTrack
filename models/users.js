@@ -1,6 +1,4 @@
-import {
-    pool
-} from '../config/config.js';
+import pool from '../config/config.js';
 
 const getExistingusers = async () => {
     const [result] = await pool.query(`

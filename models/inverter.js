@@ -1,4 +1,3 @@
-
 import pool from '../config/config.js';
 
 export const getInverterData = async () => {
