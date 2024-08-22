@@ -8,8 +8,6 @@ import {
     getExistingUserEmailAdd
 } from '../models/users.js';
 
-import bcrypt from 'bcrypt';
-
 export default {
 
     getManyUsers: async (req, res) => {
@@ -49,7 +47,7 @@ export default {
 
             const hash = await bcrypt.hash(userPass, 10);
 
-            await registerNewUser(firstName, lastName, gender, emailAdd, hash);
+            await registerNewUser(firstName, lastName, emailAdd, hash);
 
             res.send('User has been registered successfully!');
 

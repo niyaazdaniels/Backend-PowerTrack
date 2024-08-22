@@ -1,5 +1,7 @@
 import express from 'express';
-import { dailyController } from '../controller/dailyController.js';
+import {
+    dailyController
+} from '../controller/dailyController.js';
 
 const router = express.Router();
 
