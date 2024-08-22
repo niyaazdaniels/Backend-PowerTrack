@@ -2,12 +2,11 @@ import express from "express";
 
 import userController from "../controller/users.js";
 
-
 const router = express.Router();
 
 router
 
-    .route('/')
+    .route("/")
 
     .get(userController.getManyUsers)
 
@@ -15,13 +14,12 @@ router
 
 router
 
-    .route('/:userID')
+    .route("/:userID")
 
     .get(userController.getOneUser)
 
     .patch(userController.editOneUser)
 
     .delete(userController.deleteOneUser);
-
 
 export default router;
