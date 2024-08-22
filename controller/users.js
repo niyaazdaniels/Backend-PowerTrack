@@ -1,5 +1,5 @@
 import {
-    getExistingUsers,
+    getExistingusers,
     getExistingUser,
     editExistingUser,
     deleteExistingUser,
@@ -16,7 +16,7 @@ export default {
 
         try {
 
-            const users = await getExistingUsers();
+            const users = await getExistingusers();
 
             if (!users) {
 
@@ -111,7 +111,7 @@ export default {
 
             await editExistingUser(firstName, lastName, emailAdd, userPass, +req.params.userID);
 
-            const updatedUser = await getExistingUsers();
+            const updatedUser = await getExistingusers();
 
             res.json(updatedUser);
 
